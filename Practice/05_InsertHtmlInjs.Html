@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Html In javascript</title>
+</head>
+<body>
+    <h1>html in javascript</h1>
+    <div id="main">
+
+    </div>
+    <script>
+        document.getElementById("main").innerHTML="Hello world";
+
+        var a= 'this is my vlog and my working';
+        console.log(a);
+        search = a.indexOf("vlog");
+        console.log(search);
+        
+        searchmore = a.lastIndexOf("working");
+        console.log(searchmore);
+
+        var b= 'this is my vlog and my';
+        countsearch = b.slice(1,9);
+        console.log(countsearch);
+    </script>
+</body>
+</html>
