@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else</title>
+  </head>
+ <style>
+    div{
+        display: flex;
+        justify-content: center;
+        color: gray;
+
+    }
+    h4{
+        width: 100%;
+    }
+ </style>
+  <body>
+    <div>
+      <h1 id="display">hello</h1>
+      <h4 contenteditable="true">viral video</h4>
+    </div>
+    <script>
+      
+      let day = prompt("Enter the day");
+    //   let age = Number(prompt("enter your age.?"));
+      switch (day) {
+        case "monday":
+          document.getElementById("display").innerHTML = "monday";
+          break;
+
+        case "tusday":
+          document.getElementById("display").innerHTML = "tusday";
+          break;
+
+        case "wednesday":
+          document.getElementById("display").innerHTML = "wednesday";
+          break;
+
+        case "thursday":
+          document.getElementById("display").innerHTML = "thursday";
+          break;
+
+        case "friday":
+          document.getElementById("display").innerHTML = "friday";
+          break;
+
+        case Sautrday:
+          document.getElementById("display").innerHTML = "Sautrday";
+          break;
+
+        case unknown:
+          document.getElementById("display").innerHTML = "unknown";
+          break;
+
+        default:
+          document.getElementById("display").innerHTML = "Sunday";
+          break;
+      }
+     
+    </script>
+  </body>
+</html>
