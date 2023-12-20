@@ -6,14 +6,28 @@
   <title>if else</title>
 </head>
 <body>
+  <!-- <h1>Ham ek condition run karvayenge jisme ham paka karenge kon gadi chala sakata he or kon nh</h1> -->
   <script>
-    let index = 0;
-    if (index >  5) {
-      console.log("sahi pakade ho bhaiya");
-    }
-    else{
-      console.log("kya kar raha he bhai");
-    }
+    let a = prompt("What's  your Age?");
+    // a = Number.parseInt(a);
+   if (a < 0) {
+    alert("Please enter valid age");
+   }
+   else if(a<10 && a>0){
+    alert("tu abhi bacha he ");
+   }
+   else if(a<18 && a>=10){
+    alert("bas thode din or ");
+   }
+   else if(a < 100 && a>=18){
+    alert("chala ja")
+   }
+   else{
+    alert("so sad")
+   }
+  </script>
+  <script>
+    
   </script>
 </body>
 </html>
