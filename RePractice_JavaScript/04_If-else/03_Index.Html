@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <script>
+        let time = prompt("What's The Time?");
+        
+        if (time <0) {
+            alert("this is not valid time");
+            
+        }
+        else if (time < 12 && time >= 0) {
+            alert("Good Morning");
+            
+        }
+        else if (time < 17 && time >= 12) {
+            alert("Good Afternoon");
+            
+        }
+        else if (time < 20 && time >= 17) {
+            alert("Good Evening");
+            
+        }
+        else if (time <= 24 && time >= 20) {
+            alert("Good Night");
+            
+        }
+        else {
+            alert("Not valid time");
+            
+        }
+
+    </script>
+</body>
+</html>
