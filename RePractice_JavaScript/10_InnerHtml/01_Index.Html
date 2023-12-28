@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnerHtml</title>
+  </head>
+  <style>
+    #main {
+      height: 500px;
+      width: 500px;
+      border: 2px solid black;
+      margin: 10px auto;
+      text-align: center;
+    }
+    .box {
+      height: 400px;
+      width: 450px;
+      border: 2px solid black;
+      margin: 10px auto;
+    }
+  </style>
+  <body>
+    <!-- <div id="main"> -->
+      <!-- <div class="box"></div> -->
+      <button onclick="f()">click me</button>
+
+      <p id="you">you good</p>
+
+      <!-- <button onclick="Toggleclick()">click me</button> -->
+    <!-- </div> -->
+
+    <script>
+
+        //   function demo() {
+              // document.querySelector('.box').innerHTML="hello world";
+
+
+      function f() {
+      document.getElementById("you").innerHTML = "lol";
+      document.querySelector("#you").element.setAttribute("style", "color: green;");
+
+          }
+    </script>
+  </body>
+</html>

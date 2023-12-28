@@ -8,30 +8,27 @@
 <body>
     <script>
         let time = prompt("What's The Time?");
-        
-        if (time <0) {
-            alert("this is not valid time");
+     
+        if (time <= 0) {
+            document.write("this is not valid time. Please")
             
         }
-        else if (time < 12 && time >= 0) {
-            alert("Good Morning");
-            
+        else if(time < 12 && time >= 0){
+            document.write("good morning");
+
         }
-        else if (time < 17 && time >= 12) {
-            alert("Good Afternoon");
-            
+        else if(time < 17 && time >= 12){
+            document.write("good afternoon");
         }
-        else if (time < 20 && time >= 17) {
-            alert("Good Evening");
-            
+        else if (time < 20 && time >= 17)
+        {
+            document.write("good evening");
         }
-        else if (time <= 24 && time >= 20) {
-            alert("Good Night");
-            
+        else if(time <= 24 && time >= 20){
+            document.write("good night");
         }
-        else {
-            alert("Not valid time");
-            
+        else{
+            document.write("o hlo 24 ghante hi hote he thik he")
         }
 
     </script>
