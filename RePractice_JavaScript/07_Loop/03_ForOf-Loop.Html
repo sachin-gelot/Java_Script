@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcion In javaScript</title>
+    <title>ForOf Loop</title>
 </head>
 <body>
     <script>
-        function sachin(a,b) {
-            console.log(a+b);
+        let systems = ["Windows", "linux", "mac", "kali-linux"];
+
+        for (data of systems) {
+            console.log(data);
+            console.log(data.length);
+
         }
-        sachin(10 , 20)
+
     </script>
 </body>
 </html>
