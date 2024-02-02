@@ -12,61 +12,87 @@
       box-sizing: border-box;
     }
     body {
+      height: 100%;
+      width: 100%;
+      background: url(../IMAGE/jeremy-bishop-G9i_plbfDgk-unsplash.jpg) no-repeat
+        center center/cover;
+    }
+    #main {
+      background-color: rgb(157, 204, 245);
       display: flex;
       justify-content: center;
-      align-items: center;
       text-align: center;
-      margin: 90px 0;
-      /* width: 100%; */
+      margin: 100px auto;
+      width: 80%;
+      gap: 10px;
+      border: 2px solid black;
+      padding: 20px 50px;
+      border-radius: 30px;
     }
-    div img {
-      height: 600px;
-      width: 150px;
-      margin: 0px 30px;
-      border-radius: 50px;
+    .data {
+      width: 120px;
+      height: 500px;
+      transition: 0.5s ease-in-out;
     }
-    .valid{
-        transition: 3s;
-    }
-    .valid:hover{
-      width: 90% !important;
+    img {
+      height: 100%;
+      width: 100%;
       overflow: hidden;
-      
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid black;
     }
-    #data{
-        border: 2px solid black;
+    .valid {
+      transition: 2s ease-out;
+      border-radius: 10px;
+    }
+    .valid:hover {
+      width: 100% !important;
     }
   </style>
   <body>
-    <div class="data">
-      <img src="../../Task/IMG/free-nature-images.jpg" alt="" class="image" />
-    </div>
-    <div class="data">
-      <img src="../../Task/IMG/hd-a5u9zq0a0ymy2dug.jpg" alt="" class="image" />
-    </div>
-    <div class="data">
-      <img src="../../Task/IMG/images.jpeg" alt="" class="image" />
-    </div>
-    <div class="data">
-      <img src="../../Task/IMG/nature-3082832_1280.jpg" alt="" class="image" />
-    </div>
-    <div class="data">
-      <img
-        src="../../Task/IMG/nature-4k-pc-full-hd-wallpaper-preview.jpg"
-        alt=""
-        class="image"
-      />
+    <div id="main">
+      <div class="data">
+        <img src="../../Task/IMG/free-nature-images.jpg" alt="" class="image" />
+      </div>
+      <div class="data">
+        <img
+          src="../../Task/IMG/hd-a5u9zq0a0ymy2dug.jpg"
+          alt=""
+          class="image"
+        />
+      </div>
+      <div class="data">
+        <img
+          src="../IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg"
+          alt=""
+          class="image"
+        />
+      </div>
+      <div class="data">
+        <img
+          src="../../Task/IMG/nature-3082832_1280.jpg"
+          alt=""
+          class="image"
+        />
+      </div>
+      <div class="data">
+        <img
+          src="../IMAGE/basil-eliyas-xvIkwYHbYrI-unsplash.jpg"
+          alt=""
+          class="image"
+        />
+      </div>
     </div>
   </body>
   <script>
     let body = document.querySelector("body");
-  let name = document.querySelectorAll('.data');
-  let img = document.querySelectorAll('.image');
-  img.forEach(element => {
-    element. addEventListener("click",function() {
-        element.classList.toggle("valid")
-    })
-    
-  });
+    let name = document.querySelectorAll(".data");
+    let img = document.querySelectorAll(".image");
+    name.forEach((element) => {
+      element.addEventListener("click", function () {
+        element.classList.toggle("valid");
+      });
+    });
   </script>
 </html>

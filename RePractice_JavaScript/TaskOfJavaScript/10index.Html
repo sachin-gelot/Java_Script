@@ -1,35 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px;
-  box-sizing: border-box;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://img.freepik.com/free-vector/colorful-watercolor-rainbow-background_125540-151.jpg) no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border: 1px solid red;
+            border-radius: 20px;
+            padding: 40px;
+            align-items: center;
+            background-color:rgba(255, 255, 255);
+        }
+
+        .img-box {
+            width: 70px;
+            height: 400px;
+            border: 1px solid gray;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .img-box img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.9s;
+        }
+
+        .full-screen {
+            width: 600px;
+        }
+        .full-screen:hover img{
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
-
-<p>Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<div id="myDIV">
-This is a DIV element.
-</div>
-
+    <div class="container">
+        <div class="img-box full-screen">
+            <img src="../../Task/IMG/free-nature-images.jpg" alt="image">
+        </div>
+        <div class="img-box">
+            <img src="../../Task/IMG/hd-a5u9zq0a0ymy2dug.jpg" alt="image">
+        </div>
+        <div class="img-box">
+            <img src="../../Task/IMG/images.jpeg" alt="image">
+        </div>
+        <div class="img-box">
+            <img src="../../Task/IMG/nature-3082832_1280.jpg" alt="image">
+        </div>
+        <div class="img-box">
+            <img src="../../Task/IMG/nature-4k-pc-full-hd-wallpaper-preview.jpg" alt="image">
+        </div>
+    </div>
+</body>
 <script>
-function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-}
+
+    let imgBox = document.querySelectorAll(".img-box")
+    for (const image of imgBox) {
+        image.addEventListener("click", () => {
+            imgBox.forEach((element) => {
+                element.classList.remove("full-screen")
+            })
+            image.classList.add("full-screen")
+        })
+    }
 </script>
 
-</body>
 </html>
-
