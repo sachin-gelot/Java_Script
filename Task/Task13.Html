@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+  <script>
+    let body = document.querySelector("body");
+    let input = document.createElement("input");
+    let btn = document.createElement("button");
+    body.appendChild(input);
+    body.appendChild(btn);
+    btn.innerText = "ClickUp";
+    btn.setAttribute("onclick", "clickFun()");
+    let clr;
+    let rendomClr = () => {
+
+      let red = Math.floor(Math.random() * 256);
+      let blue = Math.floor(Math.random() * 256);
+      let green = Math.floor(Math.random() * 256);
+      clr = `rgba(${red},${blue},${green})`;
+      
+    };
+    rendomClr();
+
+    let clickFun = () => {
+      let value = input.value;
+      let pera = document.createElement("p");
+      pera.innerText = value;
+      body.append(pera);
+      pera.style.background = clr;
+      input.value = "";
+    };
+    
+
+    </script>
+
+</html>

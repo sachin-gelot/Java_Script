@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <script>
+      //   let arr = [1, 2, 3, 4, 5];
+
+      //   let array = arr.map((a) =>  {
+
+      //     return a * 2;
+
+      //   });
+
+      //   console.log(array);
+      //   let arr = [1, 2, 3, 4, 5];
+
+      //   let array = arr.map((a) =>  {
+
+      //     return a * 3;
+
+      //   });
+
+      //   console.log(array);
+        let arr = [1, 2, 3, 4, 5,6, 7, 8, 9, 10,];
+      //   arr = toString(arr);
+
+      //   let array = arr.map((a) =>  {
+
+      //     return a * 3;
+
+      //   });
+
+      //   console.log(array);
+      const output = arr.reduce((acc , curr) =>{
+        return acc + curr;
+      },0);
+      console.log(output);
+    </script>
+  </body>
+</html>

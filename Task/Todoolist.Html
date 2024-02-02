@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #main {
+      margin: 20px auto;
+      border: 2px solid black;
+      text-align: center;
+      width: 80%;
+      background-color: beige;
+    }
+    .box-1 {
+      margin: 60px 30px;
+    }
+    .box-1 input {
+      width: 40%;
+      padding: 10px;
+      position: relative;
+      left: -50px;
+    }
+    .box-1 button {
+      position: relative;
+      left: 24px;
+    }
+    .underline {
+      width: 50%;
+      height: 0px;
+      border: 2px solid black;
+      margin-top: 30px;
+    }
+    .box-2 {
+      display: flex;
+      margin: 50px auto;
+      justify-content: center;
+    }
+    button {
+      background-color: crimson;
+      color: khaki;
+      margin: 0px 10px;
+      padding: 8px 30px;
+    }
+    button:hover {
+      background-color: rgb(117, 4, 26);
+      color: rgb(242, 222, 6);
+      transition: 0.9s;
+      transform: scale(0.91);
+      overflow: hidden;
+    }
+    .check {
+      margin: 4px 0 0;
+      line-height: normal;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <h1 id="header">Todoo List</h1>
+
+      <div class="box-1">
+        <input type="text" />
+        <button onclick="ClickUp()">Clickme</button>
+      </div>
+
+      <div class="box-2">
+        <input type="checkbox" name="Check" class="check" />
+        <div class="underline"></div>
+        <button on>Update</button>
+        <button>Delete</button>
+      </div>
+    </div>
+  </body>
+  <script>
+      let ClickUp = () => {
+        let a = document.querySelector(".underline")
+      let value = input.value;
+      let pera = document.createElement("p");
+      pera.innerText = value;
+      a.append(pera);
+      input.value = "";
+    }; 
+
+  </script>
+</html>

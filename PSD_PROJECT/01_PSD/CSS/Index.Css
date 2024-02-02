@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+    display: flex;
+    margin-top: 10px;
+}
+.nav-bar,.unorder,.logo
+{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+}

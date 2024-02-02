@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 90px 0;
+      /* width: 100%; */
+    }
+    div img {
+      height: 600px;
+      width: 150px;
+      margin: 0px 30px;
+      border-radius: 50px;
+    }
+    .valid{
+        transition: 3s;
+    }
+    .valid:hover{
+      width: 90% !important;
+      overflow: hidden;
+      
+    }
+    #data{
+        border: 2px solid black;
+    }
+  </style>
+  <body>
+    <div class="data">
+      <img src="../../Task/IMG/free-nature-images.jpg" alt="" class="image" />
+    </div>
+    <div class="data">
+      <img src="../../Task/IMG/hd-a5u9zq0a0ymy2dug.jpg" alt="" class="image" />
+    </div>
+    <div class="data">
+      <img src="../../Task/IMG/images.jpeg" alt="" class="image" />
+    </div>
+    <div class="data">
+      <img src="../../Task/IMG/nature-3082832_1280.jpg" alt="" class="image" />
+    </div>
+    <div class="data">
+      <img
+        src="../../Task/IMG/nature-4k-pc-full-hd-wallpaper-preview.jpg"
+        alt=""
+        class="image"
+      />
+    </div>
+  </body>
+  <script>
+    let body = document.querySelector("body");
+  let name = document.querySelectorAll('.data');
+  let img = document.querySelectorAll('.image');
+  img.forEach(element => {
+    element. addEventListener("click",function() {
+        element.classList.toggle("valid")
+    })
+    
+  });
+  </script>
+</html>
