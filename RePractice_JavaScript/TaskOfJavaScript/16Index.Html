@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cssdesignword
+    sideinspire
+    land book
+    awwwards
+    glassmorphism
+    neumorphism
+    freefrontend
+    uiverse
+    css scan
+    codepen -->
+    <script>
+        let i = 0;
+let images = ["../IMAGE/basil-eliyas-xvIkwYHbYrI-unsplash.jpg","../IMAGE/basil-eliyas-xvIkwYHbYrI-unsplash.jpg", "../IMAGE/basil-eliyas-xvIkwYHbYrI-unsplash.jpg"];
+let time = 1000;
+let paused = false;
+
+
+//slider functionality
+function handleChange() {
+if (!paused) {
+document.slide.src = images[i];
+if (i < images.length - 1) {
+i++;
+} else {
+i = 0;
+}
+}
+// slideshow functionality
+setTimeout(handleChange, time);
+}
+// slideshow pause functionality
+function pause() {
+paused = !paused;
+}
+
+
+window.onload = handleChange;
+    </script>
+     
+
+</body>
+</html>

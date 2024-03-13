@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 200px;
+    }
+    button{
+        text-decoration: line-through;
+    }
+</style>
+<body>
+    <img src="" alt="" id="img">
+    <button onclick="change()">change</button>
+</body>
+<script>
+   function change() {
+    let a = document.getElementById('img');
+    if (a.src =="RePractice_JavaScript\IMAGE\jeremy-bishop-G9i_plbfDgk-unsplash.jpg") {
+        a.src = "RePractice_JavaScript\IMAGE\images.jpeg"
+
+    }
+    else{
+        a.src = "RePractice_JavaScript\IMAGE\jeremy-bishop-G9i_plbfDgk-unsplash.jpg"
+
+    }
+    
+   }
+</script>
+</html>

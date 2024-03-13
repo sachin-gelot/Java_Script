@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+  </head>
+  <style>
+    img{
+      height: 100px;
+    }
+    body{
+display: flex;
+margin: 10px 50px;
+    }
+  </style>
+  <body>
+
+
+  </body>
+  <script>
+    let main = [
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+      {
+        src: "../RePractice_JavaScript/IMAGE/d69a2bb8361c03cda15eec1df8a2a97d.jpg",
+        name: "Roadster",
+        price: 1000,
+      },
+    ];
+    const cart = ()=> {
+        let body = document.querySelector("body");
+      for (let i = 0; i < main.length; i++) {
+        let box = document.createElement("div");
+        box.classList.add("xyz");
+
+        box.innerHTML = `
+      <img src="${main[i].src}">
+      <h1>${main[i].name}</h1>
+      <p>Price: $${main[i].price}</p>
+      
+    `;
+        body.append(box);
+      }
+    };
+    cart();
+  </script>
+</html>

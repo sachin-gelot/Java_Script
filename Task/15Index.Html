@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculate</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .date {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 0px;
+            text-align: center;
+        }
+        p{
+            height: 30px;
+        }
+        input {
+            height: 20px;
+        }
+        #age{
+            height: 30px;
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 auto;
+        }
+        button{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="date"> <b>Today Date:-</b> <input type="date" name="today" id="todaydate"></div>
+        <div class="date"> <b>Birth Date:-</b> <input type="date" name="age" id="birthdate"></div>
+        <div id="age"></div>
+        <button onclick="clickMe()">Submit</button>
+
+        <script>
+
+            function clickMe(){
+
+                let today = document.getElementById("todaydate");
+                let birthDate = document.getElementById("birthdate");
+
+                let age =(today.getFullYear() - birthDate.getFullYear());
+                let month = (today.getMonth() - birthDate.getMonth());
+                let day = (today.getDate() - birthDate.getDate());
+
+
+                let total = (Todaydate - Birthdate);
+                console.log ("total");
+                document.getElementById("age").innerHTML= total;
+            }
+        </script>
+    </div>
+</body>
+</html>
